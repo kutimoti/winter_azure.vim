@@ -44,7 +44,7 @@ call s:h("CursorLineNr" , s:warm_n , s:bg , "")
 "call s:h("DiffDelete", s:warning , s:none , "")
 "call s:h("DiffText", )
 "call s:h("IncSearch", s:bg, s:yellow, "")
-"call s:h("Search", s:bg, s:yellow, "")
+call s:h("Search", s:bg, s:yellow, "")
 
 call s:h("ErrorMsg", s:warning, s:none, "")
 call s:h("ModeMsg", s:fg, s:none, "")
@@ -80,9 +80,9 @@ call s:h("SpellRare", s:yellow, s:none, "")
 "call s:h("FoldColumn", s:fg, "", "")
 call s:h("SignColumn", s:warning , s:bg, "")
 "
-"call s:h("MatchParen", s:blue, "", "underline")
+call s:h("MatchParen", s:azure_l, s:none, "underline")
 "call s:h("SpecialKey", s:fg, "", "")
-"call s:h("Title", s:green, "", "")
+call s:h("Title", s:warm_d, "", "")
 "call s:h("WildMenu", s:fg, "", "")
 "
 
@@ -131,34 +131,33 @@ call s:h("Todo" , s:warm_d , s:none , "")
 
 " Plugins {
 " GitGutter
-"call s:h("GitGutterAdd", s:green, s:gutter_bg, "")
-"call s:h("GitGutterDelete", s:red, s:gutter_bg, "")
-"call s:h("GitGutterChange", s:yellow, s:gutter_bg, "")
-"call s:h("GitGutterChangeDelete", s:red, s:gutter_bg, "")
-"" Fugitive
-"call s:h("diffAdded", s:green, "", "")
-"call s:h("diffRemoved", s:red, "", "")
-"" }
-"
-"
-"" Git {
-"call s:h("gitcommitComment", s:comment_fg, "", "")
-"call s:h("gitcommitUnmerged", s:red, "", "")
-"call s:h("gitcommitOnBranch", s:fg, "", "")
-"call s:h("gitcommitBranch", s:purple, "", "")
-"call s:h("gitcommitDiscardedType", s:red, "", "")
-"call s:h("gitcommitSelectedType", s:green, "", "")
-"call s:h("gitcommitHeader", s:fg, "", "")
-"call s:h("gitcommitUntrackedFile", s:cyan, "", "")
-"call s:h("gitcommitDiscardedFile", s:red, "", "")
-"call s:h("gitcommitSelectedFile", s:green, "", "")
-"call s:h("gitcommitUnmergedFile", s:yellow, "", "")
-"call s:h("gitcommitFile", s:fg, "", "")
-"hi link gitcommitNoBranch gitcommitBranch
-"hi link gitcommitUntracked gitcommitComment
-"hi link gitcommitDiscarded gitcommitComment
-"hi link gitcommitSelected gitcommitComment
-"hi link gitcommitDiscardedArrow gitcommitDiscardedFile
-"hi link gitcommitSelectedArrow gitcommitSelectedFile
-"hi link gitcommitUnmergedArrow gitcommitUnmergedFile
+call s:h("GitGutterAdd", s:warm_l, s:bg, "")
+call s:h("GitGutterDelete", s:warm_d, s:bg, "")
+call s:h("GitGutterChange", s:warm_n, s:bg, "")
+call s:h("GitGutterChangeDelete", s:warm_d, s:bg, "")
+" Fugitive
+call s:h("diffAdded", s:warm_l, "", "")
+call s:h("diffRemoved", s:warm_d, "", "")
 " }
+
+
+" Git {
+call s:h("gitcommitComment", s:azure_dd, "", "")
+call s:h("gitcommitUnmerged", s:warm_d, "", "")
+call s:h("gitcommitOnBranch", s:fg, "", "")
+call s:h("gitcommitBranch", s:azure_l, "", "")
+call s:h("gitcommitDiscardedType", s:warm_d, "", "")
+call s:h("gitcommitSelectedType", s:fg, "", "")
+call s:h("gitcommitHeader", s:fg, "", "")
+call s:h("gitcommitUntrackedFile", s:azure_d, "", "")
+call s:h("gitcommitDiscardedFile", s:warm_d, "", "")
+call s:h("gitcommitSelectedFile", s:fg, "", "")
+call s:h("gitcommitUnmergedFile", s:warm_d, "", "")
+call s:h("gitcommitFile", s:fg, "", "")
+hi link gitcommitNoBranch gitcommitBranch
+hi link gitcommitUntracked gitcommitComment
+hi link gitcommitDiscarded gitcommitComment
+hi link gitcommitSelected gitcommitComment
+hi link gitcommitDiscardedArrow gitcommitDiscardedFile
+hi link gitcommitSelectedArrow gitcommitSelectedFile
+hi link gitcommitUnmergedArrow gitcommitUnmergedFile
